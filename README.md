@@ -21,7 +21,7 @@ The Renovate configuration is defined in the `renovate.json` file. Here is an ex
     "config:recommended"
   ],
   "dashboard": true,
-  "labels": ["dependencies"]
+  "labels": ["dependencies", "renovate", "update"]
 }
 ```
 
@@ -40,6 +40,8 @@ jobs:
   dashboard:
     runs-on: ubuntu-latest
 
+    labels: ["renovate", "dashboard"]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -47,3 +49,21 @@ jobs:
       - name: Run Renovate CLI
         run: npx renovate
 ```
+
+## Predefined Labeling System
+
+This repository uses a predefined labeling system to categorize and manage issues, pull requests, and workflows. The following labels are used:
+
+### Renovate Labels
+
+- **dependencies**: Used for dependency updates.
+- **renovate**: Used for Renovate-related tasks.
+- **update**: Used for general updates.
+
+### GitHub Actions Workflow Labels
+
+- **ci**: Used for continuous integration workflows.
+- **workflow**: Used for general workflow tasks.
+- **codeql**: Used for CodeQL analysis workflows.
+- **security**: Used for security-related workflows.
+- **dashboard**: Used for the Renovate dependency dashboard workflow.

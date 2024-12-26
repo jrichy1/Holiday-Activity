@@ -8,6 +8,8 @@ jobs:
   dashboard:
     runs-on: ubuntu-latest
 
+    labels: ["renovate", "dashboard"]
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
