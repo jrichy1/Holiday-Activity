@@ -4,5 +4,5 @@
     "config:recommended"
   ],
   "dashboard": true,
-  "labels": ["dependencies"]
+  "labels": ["dependencies", "renovate", "update"]
 }
