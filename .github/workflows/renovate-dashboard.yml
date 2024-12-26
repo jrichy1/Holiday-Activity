@@ -1,0 +1,16 @@
+name: Renovate Dependency Dashboard
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Renovate CLI
+        run: npx renovate
