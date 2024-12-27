@@ -3,6 +3,5 @@
   "extends": [
     "config:recommended"
   ],
-  "dashboard": true,
   "labels": ["dependencies", "renovate", "update"]
 }
