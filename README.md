@@ -50,6 +50,8 @@ jobs:
         run: npx renovate
 ```
 
+The Renovate dependency dashboard has been triggered to run again on this repository. ✅
+
 ## Predefined Labeling System
 
 This repository uses a predefined labeling system to categorize and manage issues, pull requests, and workflows. The following labels are used:
